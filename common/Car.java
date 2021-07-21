@@ -1,22 +1,23 @@
 package javaExtendproject.common;
 
 public class Car {
-	String name;
+	private String name;
 	
-	public Car() {
-		this.name = "normalCar";
+	
+	public String getName() {
+		return name;
 	}
-	
-	public Car(String carName) {
-		this.name = carName;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	
+
 	public void go() {
-		System.out.println(this.name + "goes");
+		System.out.println(this.name + " goes");
 	}
 	
 	public void stop() {
-		System.out.println(this.name + "stop");
+		System.out.println(this.name + " stop");
 	}
 
 }
